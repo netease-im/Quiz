@@ -1,4 +1,4 @@
-
+ï»¿
 #include "video_frame_mng.h"
 #include "libyuv.h"
 #include <sys/timeb.h>
@@ -23,8 +23,8 @@ void VideoFrameMng::AddVideoFrame(const char* data, int size, int width, int hei
 {
 	//nim::NIMVideoSubType subtype = nim::kNIMVideoSubTypeI420;
 	timeb time_now;
-	ftime(&time_now); // ÃëÊý
-	int64_t cur_timestamp = time_now.time * 1000 + time_now.millitm; // ºÁÃë
+	ftime(&time_now); // ç§’æ•°
+	int64_t cur_timestamp = time_now.time * 1000 + time_now.millitm; // æ¯«ç§’
 	const char* src_buffer = data;
 	std::string ret_data;
 	if (frame_type != Ft_I420)
@@ -58,8 +58,8 @@ void VideoFrameMng::AddVideoFrameEx(const char* data, int size, int width, int h
 {
 	//nim::NIMVideoSubType subtype = nim::kNIMVideoSubTypeI420;
 	timeb time_now;
-	ftime(&time_now); // ÃëÊý
-	int64_t cur_timestamp = time_now.time * 1000 + time_now.millitm; // ºÁÃë
+	ftime(&time_now); // ç§’æ•°
+	int64_t cur_timestamp = time_now.time * 1000 + time_now.millitm; // æ¯«ç§’
 	const char* src_buffer = data;
 	std::string ret_data(data, size);
 	int32_t wxh = width * height;
@@ -155,15 +155,15 @@ bool VideoFrameMng::GetVideoFrame(uint64_t& time, char* out_data, int& width, in
 {
 	nbase::NAutoLock auto_lock(&lock_);
 	timeb time_now;
-	ftime(&time_now); // ÃëÊý
-	uint64_t cur_timestamp = time_now.time * 1000 + time_now.millitm; // ºÁÃë
+	ftime(&time_now); // ç§’æ•°
+	uint64_t cur_timestamp = time_now.time * 1000 + time_now.millitm; // æ¯«ç§’
 	PicRegion* pic_info = &capture_video_pic_;
 	if (pic_info && pic_info->pdata_ && time < pic_info->timestamp_ && cur_timestamp - 1000 < pic_info->timestamp_)
 	{
 		time = pic_info->timestamp_;
 		int src_w = pic_info->width_;
 		int src_h = pic_info->height_;
-		//µÈ±È
+		//ç­‰æ¯”
 		if (width <= 0 || height <= 0)
 		{
 			width = src_w;
