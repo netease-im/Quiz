@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="440,600" caption="0,0,0,34">
+    <Class name="btn_login" value="font=&quot;7&quot; normaltextcolor=&quot;white&quot; normalimage=&quot;file='create.png' corner='25,5,25,5'&quot; hotimage=&quot;file='create1.png' corner='25,5,25,5'&quot; pushedimage=&quot;file='create2.png' corner='25,5,25,5'&quot;" />
+    <VBox bkcolor="bk_wnd_lightcolor">
+        <HBox height="auto" >
+            <Label class="font_title" visible="false" name="title" width="stretch" valign="center" normaltextcolor="darkcolor"/>
+			<Control />
+            <Button class="btn_wnd_close" name="closebtn" margin="10,6,10,0"/>
+        </HBox>
+		<Control margin="0,14,0,0" halign="center" height="auto" width="auto" bkimage="logo.png" />
+		<Label width="stretch" align="center" font="19" normaltextcolor="darkcolor" margin="10,0,10,0" text="云信直播竞答DEMO[主播端]" />
+        <HBox height="auto" margin="60,90,60,0" bkimage="file='../public/combo/normal.png' source='0,0,250,30' corner='5,5,30,5'">
+            <Box height="auto" width="79" valign="center">
+				<Label halign="center" font="2" normaltextcolor="darkcolor" text="奖金总额" />
+			</Box>
+			<Control valign="center" height="30" width="1" bkimage="file='../public/combo/normal.png' source='0,0,1,30'" />
+            <Combo class="list" name="money_cmb" height="40" bkimage="file='../public/combo/normal.png' source='10,0,290,30' corner='5,5,30,5'"/>
+        </HBox>
+        <Button  class="btn_login" height="42" margin="60,15,60,0" width="stretch" name="btn_start" normaltextcolor="white" text="创建房间"/>
+		<Label name="err_tip" width="stretch" align="center" normaltextcolor="link_red" margin="60,30,60,0" text="" />
+		<Control />
+		<Label width="stretch" align="center" normaltextcolor="lightcolor" margin="0,0,0,35" text="可使用“观众端DEMO”体验答题" />
+    </VBox>
+</Window>

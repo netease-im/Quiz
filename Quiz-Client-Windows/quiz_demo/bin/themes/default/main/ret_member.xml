@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+    <ListContainerElement height="36" >
+		<VBox>
+			<HBox height="32" padding="20,0,0,0" >
+				<Control width="32" height="32" bkimage="face.png" />
+				<Label name="member_id" font="2" valign="center" width="120" margin="15,0,0,0" normaltextcolor="darkcolor"/>
+				<Label name="money_count" font="2" valign="center" normaltextcolor="darkcolor"/>
+			</HBox>
+			<Control height="1" margin="0,5,0,0" bkcolor="splitline_level1"/>
+		</VBox>
+	</ListContainerElement>
+</Window>
