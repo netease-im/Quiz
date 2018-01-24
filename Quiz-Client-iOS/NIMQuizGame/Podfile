@@ -1,0 +1,9 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'NIMQuizGame' do
+   pod 'SVProgressHUD', '~> 2.2.2'
+   pod 'Toast', '~> 4.0.0'
+   pod 'CocoaLumberjack', '~> 3.4.0'
+   pod 'NIMSDK_LITE', '~> 4.7.2'
+end

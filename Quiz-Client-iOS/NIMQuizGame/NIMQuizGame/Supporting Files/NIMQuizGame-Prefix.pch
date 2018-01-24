@@ -1,0 +1,21 @@
+//
+//  NIMQuizGame-Prefix.pch
+//  NIMQuizGame
+//
+//  Created by emily on 11/01/2018.
+//  Copyright © 2018 chris. All rights reserved.
+//
+
+#ifndef NIMQuizGame_Prefix_pch
+#define NIMQuizGame_Prefix_pch
+
+#import <NIMSDK/NIMSDK.h>
+#import "NTESDDLogManager.h"
+
+#import "NTESBasicDefine.h"
+#import "UIView+Toast.h"
+#import "UIView+NTES.h"
+#import "UIImage+NTES.h"
+#import "SVProgressHUD.h"
+
+#endif

@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F793434D7A4574D2EE8BC331AB863BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
+		10811A0C5774FFFBF1B763FA38A4BF7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		1189D8C6CB46D0FAADDF509C7DC3F082 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A231BEE8F376ADC99A1A2B07B1D0FFE /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B74AF0CCCA5438F29E79A2ED3A46AC /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E997D0C7E0F5E2F93B9032B8A27E78B5 /* DDOSLogger.m */; };
+		231FCFB04539E2772E9A4FC99BEF12A7 /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = D70550F2A63C3920BD21FF12622D1917 /* UIView+Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		246F324F191688B9EC06AEA374758D2D /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BBDF5DF26D26A71D84A37B29B622BB23 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CD4F9B309F4DDA82DD35DB3E3375277 /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BFDEDE66E577B9D4223388D9CCF5F95 /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3441D7B7F5F9A88883353237766D9FAD /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = B93AF4FE2E386E9D7A22D0C10ED863F1 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE590C43F6CF35CDF07D6A96A161C0E /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A896EAEF3FA5C44C533F3DD4BE1A9BC /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F99B776659DABDA78353F4DC5C2E806 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F7DEC4DA7EC242BE93D04A47E8340 /* DDFileLogger.m */; };
+		4BE1EB9D415B53EFFAC7EBFF5EA0F538 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		4CA7073FAD18C4536E1D73EA79321BF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		4D87ADB77D6900A4D39B690A1840BE14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		539EB1571B26CBFE981318A806FE95EA /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B4BCC95925ED69D9F58E25E3029FB /* SVRadialGradientLayer.m */; };
+		55359F5DE0FAA9C383FECF4EE275DA6F /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE5990E1F82A892A6C77F9039CD9002 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C093789F544A3FA174C37799C55422F /* Pods-NIMQuizGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCA235B489103CDBA5553ECADA748E1 /* Pods-NIMQuizGame-dummy.m */; };
+		61CF9D0D9FBE89490F72FB79A7B05C40 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EEB91B7A09C797D3C164AF2B3B1918 /* SVIndefiniteAnimatedView.m */; };
+		68637E3E53F423334D8A9A12D4D4356B /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF300B5F0F031214929F8E191549D0D /* DDContextFilterLogFormatter.m */; };
+		7B16156A060AD92175B6A39E3AFFF7E6 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B1A74E29BF55F8C3E40FE1A6AA810EF /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F3089B8392F4A3CE4624B9D05C74F04 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F708405C3B9B2F24865DBDA2EDC03B /* SVProgressHUD.m */; };
+		7F97B3E3FC5509E0E079D270FF598143 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D65D9B4235DA9895C6A7B25117FD63 /* SVProgressAnimatedView.m */; };
+		8BB083D4FDC1F872F0F0246C9EB3A522 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 659BF2BC29CE12AE2E9726567B67A2F9 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F05EDEF9B8DC376146C2FD828000A4E /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C97112DD83BAB529DF90E596783D0 /* DDDispatchQueueLogFormatter.m */; };
+		8FF0F792D87F0F5A6F1578BEA3F04DCE /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBFA1F1426116D1E80AF8703DBB4698 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9101B878396BAB2703C8788895802972 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F39231E0F7ED4A2ABC585760F0F14238 /* SVProgressHUD-dummy.m */; };
+		9505573B785699BF7175E70041928F60 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8799872369D5A11963D1F106A25F48 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95FA511A8FF639BD4EA4718447F04809 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8457A0FD45B47ED5653A60F13F2DB8CF /* DDTTYLogger.m */; };
+		96E88142BE26EAD887FCE25F81276E88 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E27FD02E998D1D80258EC44D582CADF /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B60415F4B0A64AFFEA834E6E544A07B /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CD34A54822679316E7555845741344 /* DDASLLogger.m */; };
+		9E4074EE1199C4B07D01D2B7C820BA60 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 723D33AE2350F9C24FB32F4711839821 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A31A4837EC94EE509FA9E830873A0051 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7272725263648E8638866360DA99D7 /* DDASLLogCapture.m */; };
+		A3F7920CDCDA04CBB02B90DE71024CA8 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB714D7E67A02DE254257556F58CA76B /* DDMultiFormatter.m */; };
+		A4B7EF6C5296F8B175118340855DD9AF /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9197ED924A048C0C48CBA997C1210CEF /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8E1FFAD5DD8DB05846B50854A4D6406 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF962F97B4636B0DB1759E39794B690 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A90F92B6D535965E7E26E66001040594 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D395B80070D45A2CC268058923C93D /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABB00A9FAB46BA0C44BF972CF261A764 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 06690D5B6C39EC679D37EAFC326E8D27 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF3B19F4F0D4975166F89FE36D12FB30 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A7DC7415E7A652DD5DD5B0117AEAD5 /* DDLog.m */; };
+		B5770CA75B021C2384C71A2CF97EC31A /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE8651656747F104E6A7169404AC46 /* DDAbstractDatabaseLogger.m */; };
+		B8B274A378241D90EB86E91FB66C5FC4 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A8A5D2070291355D53D26E43113ED8 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB0E888FAEAE3F77A07301F874FB5AAC /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CD0C61053ECE8A5BE956FA118D9A8E /* UIView+Toast.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C7672A3DE6BC32CE89CD3ADDD93A0CEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
+		D31978741D1AE27EE87E665FF4E0F540 /* Toast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFC53B93AD534814CD02D86C43A3A7C /* Toast-dummy.m */; };
+		D760C23A7E9EA32DE198F6E81955AD29 /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B684D84FF0C3EDB9977CB70B9D6F16D /* CocoaLumberjack-dummy.m */; };
+		DF84D530DF2BC33EEA61C6389AB1F746 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F211D9C6FC19F6E80DDB0287D778D24 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED515324B0E9A6D26F3D7D81E12747CB /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4EFC68212D30D624053A8D3CAC277C /* Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8D81E38BCC185BDCC5D8D6F466C077C /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 5990634E05E684A3857F5141A8E1207C /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B54DFDAF9BD79BE6195B93060030F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D9DCCE5442795D0AD9E99D86389328;
+			remoteInfo = CocoaLumberjack;
+		};
+		4068FFF714A9D3BE2621C5DBF77C6BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3373615B4870C2690CA91B0E79167339;
+			remoteInfo = Toast;
+		};
+		90AD36CA58B9FB908DFDD9114DA3FF20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E7FED9ADE20946B19DB7DF8F1EADD95;
+			remoteInfo = SVProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04990AF215EF436DF6BF7DEB10767910 /* libCocoaLumberjack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCocoaLumberjack.a; path = libCocoaLumberjack.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		06690D5B6C39EC679D37EAFC326E8D27 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
+		0950AF51BE2D87849FFF061EB068CA9E /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
+		0A9EFEF6D0D9BE0654494C16C0A2F13D /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BFDEDE66E577B9D4223388D9CCF5F95 /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Classes/DDOSLogger.h; sourceTree = "<group>"; };
+		0D7B4BCC95925ED69D9F58E25E3029FB /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		168BF813658F21253318F96FDD2720B8 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		18D395B80070D45A2CC268058923C93D /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
+		18E4DF95FA4BAC7531E78DBEC7543D0C /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = NIMSDK/Libs/libcrypto.a; sourceTree = "<group>"; };
+		1B8799872369D5A11963D1F106A25F48 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
+		1CF962F97B4636B0DB1759E39794B690 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		20F708405C3B9B2F24865DBDA2EDC03B /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		3A231BEE8F376ADC99A1A2B07B1D0FFE /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
+		4D4EFC68212D30D624053A8D3CAC277C /* Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = "Toast-Framework/Toast.h"; sourceTree = "<group>"; };
+		4DBFA1F1426116D1E80AF8703DBB4698 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
+		4E9F7DEC4DA7EC242BE93D04A47E8340 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
+		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5990634E05E684A3857F5141A8E1207C /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
+		5B684D84FF0C3EDB9977CB70B9D6F16D /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
+		5F211D9C6FC19F6E80DDB0287D778D24 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		6256E90C4AF7A58D2B787605BAD9122A /* libPods-NIMQuizGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-NIMQuizGame.a"; path = "libPods-NIMQuizGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		659BF2BC29CE12AE2E9726567B67A2F9 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		699C766A993055DE2CEE7D74438E5911 /* Pods-NIMQuizGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NIMQuizGame.debug.xcconfig"; sourceTree = "<group>"; };
+		6B1A74E29BF55F8C3E40FE1A6AA810EF /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		6DFE8651656747F104E6A7169404AC46 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		6E27FD02E998D1D80258EC44D582CADF /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		723D33AE2350F9C24FB32F4711839821 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		72A7DC7415E7A652DD5DD5B0117AEAD5 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
+		7A896EAEF3FA5C44C533F3DD4BE1A9BC /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
+		7BAEBB35EEDDC43E890A58B4C9295EBA /* Pods-NIMQuizGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NIMQuizGame-resources.sh"; sourceTree = "<group>"; };
+		7EFC53B93AD534814CD02D86C43A3A7C /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
+		8457A0FD45B47ED5653A60F13F2DB8CF /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
+		8BC67FDEA96F76EAD2FD330615F93E84 /* Toast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.xcconfig; sourceTree = "<group>"; };
+		8C63BC23A6DABB812785ED06ECF9C31B /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		8E3174DE11A33C46A5CCBAF5BE55F249 /* Pods-NIMQuizGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NIMQuizGame.release.xcconfig"; sourceTree = "<group>"; };
+		9197ED924A048C0C48CBA997C1210CEF /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9680429015E8EB4F7FD67EEE9FBB1586 /* libToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libToast.a; path = libToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3C97112DD83BAB529DF90E596783D0 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		9FF300B5F0F031214929F8E191549D0D /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		A2686A51AC56BBEA6D003EFB1233C5F2 /* Pods-NIMQuizGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NIMQuizGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A572B949A5741A018494BF049533462E /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = NIMSDK/Libs/libssl.a; sourceTree = "<group>"; };
+		A9CD34A54822679316E7555845741344 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
+		AB714D7E67A02DE254257556F58CA76B /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		B8830E622DADE6A9D66D670CACBABDCF /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		B93AF4FE2E386E9D7A22D0C10ED863F1 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
+		BB3AC0460A24F185A75B0F75D0203742 /* Pods-NIMQuizGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NIMQuizGame-frameworks.sh"; sourceTree = "<group>"; };
+		BBDF5DF26D26A71D84A37B29B622BB23 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
+		BFF1A58281289504A077AE4B5F90766A /* libaacplus.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libaacplus.a; path = NIMSDK/Libs/libaacplus.a; sourceTree = "<group>"; };
+		CA7272725263648E8638866360DA99D7 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
+		CBE5990E1F82A892A6C77F9039CD9002 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		D4A8A5D2070291355D53D26E43113ED8 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		D70550F2A63C3920BD21FF12622D1917 /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/UIView+Toast.h"; sourceTree = "<group>"; };
+		D9926680EDCF7AFF5610E5D0F88A4EF9 /* Toast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-prefix.pch"; sourceTree = "<group>"; };
+		DEEC132816DD0ACB1386661E62F57E95 /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
+		DF7E367CE29D3DAC0290C95B20773EB4 /* libevent.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libevent.a; path = NIMSDK/Libs/libevent.a; sourceTree = "<group>"; };
+		E4CD0C61053ECE8A5BE956FA118D9A8E /* UIView+Toast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "Toast/UIView+Toast.m"; sourceTree = "<group>"; };
+		E997D0C7E0F5E2F93B9032B8A27E78B5 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Classes/DDOSLogger.m; sourceTree = "<group>"; };
+		EB8D097E3CF5BDAD145E212BD56523D0 /* NIMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NIMSDK.framework; path = NIMSDK/NIMSDK.framework; sourceTree = "<group>"; };
+		EEC970E685F7FCE3B39184A06DB37543 /* Pods-NIMQuizGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NIMQuizGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		F39231E0F7ED4A2ABC585760F0F14238 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		F7D65D9B4235DA9895C6A7B25117FD63 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		F8EEB91B7A09C797D3C164AF2B3B1918 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FDCA235B489103CDBA5553ECADA748E1 /* Pods-NIMQuizGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NIMQuizGame-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04330C98A6C2C84B4BC0CBF91E80FBB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA7073FAD18C4536E1D73EA79321BF0 /* Foundation.framework in Frameworks */,
+				0F793434D7A4574D2EE8BC331AB863BC /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF1B599A5BCAE0081FACB0CF30D9712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10811A0C5774FFFBF1B763FA38A4BF7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D0D066DA0ED4CE07FC2E8ED143C736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D87ADB77D6900A4D39B690A1840BE14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53C9A52E392A542C611E9D658A8D069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE1EB9D415B53EFFAC7EBFF5EA0F538 /* Foundation.framework in Frameworks */,
+				C7672A3DE6BC32CE89CD3ADDD93A0CEA /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C82D45F03232E1C8FD4208E022BEA9 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				9F19CBC2E6D813A94469C65D40174DDF /* Default */,
+				7099C612B52523AC28ACD8A7EAEB9D14 /* Extensions */,
+				61792938B631699F4730BA4FAC12C191 /* Support Files */,
+			);
+			name = CocoaLumberjack;
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		1DC8C6130ED8DA55657FE31411E3BE5A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BC67FDEA96F76EAD2FD330615F93E84 /* Toast.xcconfig */,
+				7EFC53B93AD534814CD02D86C43A3A7C /* Toast-dummy.m */,
+				D9926680EDCF7AFF5610E5D0F88A4EF9 /* Toast-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Toast";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				978007DCB56F415BE390E0F949D4D4E5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BE5A777E2826126CBD10EA97DF2E04C /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				4D4EFC68212D30D624053A8D3CAC277C /* Toast.h */,
+				D70550F2A63C3920BD21FF12622D1917 /* UIView+Toast.h */,
+				E4CD0C61053ECE8A5BE956FA118D9A8E /* UIView+Toast.m */,
+				1DC8C6130ED8DA55657FE31411E3BE5A /* Support Files */,
+			);
+			name = Toast;
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		52AF7C652AE05F1D0F960CE6F12F7867 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C63BC23A6DABB812785ED06ECF9C31B /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		61792938B631699F4730BA4FAC12C191 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEEC132816DD0ACB1386661E62F57E95 /* CocoaLumberjack.xcconfig */,
+				5B684D84FF0C3EDB9977CB70B9D6F16D /* CocoaLumberjack-dummy.m */,
+				0950AF51BE2D87849FFF061EB068CA9E /* CocoaLumberjack-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaLumberjack";
+			sourceTree = "<group>";
+		};
+		61E318F1526EDED40CB78F604D83380D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16C82D45F03232E1C8FD4208E022BEA9 /* CocoaLumberjack */,
+				6835DE6867AE08BDA455469522DEB9E7 /* NIMSDK_LITE */,
+				9DDFC93E34246DCA79C4390A8BDC4C3F /* SVProgressHUD */,
+				4BE5A777E2826126CBD10EA97DF2E04C /* Toast */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		670226344B59464C160908EAC416F5B2 /* Pods-NIMQuizGame */ = {
+			isa = PBXGroup;
+			children = (
+				A2686A51AC56BBEA6D003EFB1233C5F2 /* Pods-NIMQuizGame-acknowledgements.markdown */,
+				EEC970E685F7FCE3B39184A06DB37543 /* Pods-NIMQuizGame-acknowledgements.plist */,
+				FDCA235B489103CDBA5553ECADA748E1 /* Pods-NIMQuizGame-dummy.m */,
+				BB3AC0460A24F185A75B0F75D0203742 /* Pods-NIMQuizGame-frameworks.sh */,
+				7BAEBB35EEDDC43E890A58B4C9295EBA /* Pods-NIMQuizGame-resources.sh */,
+				699C766A993055DE2CEE7D74438E5911 /* Pods-NIMQuizGame.debug.xcconfig */,
+				8E3174DE11A33C46A5CCBAF5BE55F249 /* Pods-NIMQuizGame.release.xcconfig */,
+			);
+			name = "Pods-NIMQuizGame";
+			path = "Target Support Files/Pods-NIMQuizGame";
+			sourceTree = "<group>";
+		};
+		6835DE6867AE08BDA455469522DEB9E7 /* NIMSDK_LITE */ = {
+			isa = PBXGroup;
+			children = (
+				C760DEAE36B76E801B056AB2030FC625 /* Frameworks */,
+			);
+			name = NIMSDK_LITE;
+			path = NIMSDK_LITE;
+			sourceTree = "<group>";
+		};
+		7099C612B52523AC28ACD8A7EAEB9D14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5990E1F82A892A6C77F9039CD9002 /* DDContextFilterLogFormatter.h */,
+				9FF300B5F0F031214929F8E191549D0D /* DDContextFilterLogFormatter.m */,
+				723D33AE2350F9C24FB32F4711839821 /* DDDispatchQueueLogFormatter.h */,
+				9B3C97112DD83BAB529DF90E596783D0 /* DDDispatchQueueLogFormatter.m */,
+				7A896EAEF3FA5C44C533F3DD4BE1A9BC /* DDMultiFormatter.h */,
+				AB714D7E67A02DE254257556F58CA76B /* DDMultiFormatter.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		7ADC09F629CBAF3BACFD8096CC79F6E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				168BF813658F21253318F96FDD2720B8 /* SVProgressHUD.xcconfig */,
+				F39231E0F7ED4A2ABC585760F0F14238 /* SVProgressHUD-dummy.m */,
+				B8830E622DADE6A9D66D670CACBABDCF /* SVProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				61E318F1526EDED40CB78F604D83380D /* Pods */,
+				E5CDE3673E38AFB7AFA768DA4062B62A /* Products */,
+				91D5EB076C6554EEF3E96224D79DF286 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91D5EB076C6554EEF3E96224D79DF286 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				670226344B59464C160908EAC416F5B2 /* Pods-NIMQuizGame */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		978007DCB56F415BE390E0F949D4D4E5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */,
+				FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9DDFC93E34246DCA79C4390A8BDC4C3F /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6E27FD02E998D1D80258EC44D582CADF /* SVIndefiniteAnimatedView.h */,
+				F8EEB91B7A09C797D3C164AF2B3B1918 /* SVIndefiniteAnimatedView.m */,
+				D4A8A5D2070291355D53D26E43113ED8 /* SVProgressAnimatedView.h */,
+				F7D65D9B4235DA9895C6A7B25117FD63 /* SVProgressAnimatedView.m */,
+				1CF962F97B4636B0DB1759E39794B690 /* SVProgressHUD.h */,
+				20F708405C3B9B2F24865DBDA2EDC03B /* SVProgressHUD.m */,
+				6B1A74E29BF55F8C3E40FE1A6AA810EF /* SVRadialGradientLayer.h */,
+				0D7B4BCC95925ED69D9F58E25E3029FB /* SVRadialGradientLayer.m */,
+				52AF7C652AE05F1D0F960CE6F12F7867 /* Resources */,
+				7ADC09F629CBAF3BACFD8096CC79F6E2 /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		9F19CBC2E6D813A94469C65D40174DDF /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				3A231BEE8F376ADC99A1A2B07B1D0FFE /* CocoaLumberjack.h */,
+				5F211D9C6FC19F6E80DDB0287D778D24 /* DDAbstractDatabaseLogger.h */,
+				6DFE8651656747F104E6A7169404AC46 /* DDAbstractDatabaseLogger.m */,
+				4DBFA1F1426116D1E80AF8703DBB4698 /* DDASLLogCapture.h */,
+				CA7272725263648E8638866360DA99D7 /* DDASLLogCapture.m */,
+				9197ED924A048C0C48CBA997C1210CEF /* DDASLLogger.h */,
+				A9CD34A54822679316E7555845741344 /* DDASLLogger.m */,
+				06690D5B6C39EC679D37EAFC326E8D27 /* DDAssertMacros.h */,
+				B93AF4FE2E386E9D7A22D0C10ED863F1 /* DDFileLogger.h */,
+				4E9F7DEC4DA7EC242BE93D04A47E8340 /* DDFileLogger.m */,
+				BBDF5DF26D26A71D84A37B29B622BB23 /* DDLegacyMacros.h */,
+				1B8799872369D5A11963D1F106A25F48 /* DDLog.h */,
+				72A7DC7415E7A652DD5DD5B0117AEAD5 /* DDLog.m */,
+				659BF2BC29CE12AE2E9726567B67A2F9 /* DDLog+LOGV.h */,
+				5990634E05E684A3857F5141A8E1207C /* DDLogMacros.h */,
+				0BFDEDE66E577B9D4223388D9CCF5F95 /* DDOSLogger.h */,
+				E997D0C7E0F5E2F93B9032B8A27E78B5 /* DDOSLogger.m */,
+				18D395B80070D45A2CC268058923C93D /* DDTTYLogger.h */,
+				8457A0FD45B47ED5653A60F13F2DB8CF /* DDTTYLogger.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		C760DEAE36B76E801B056AB2030FC625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF1A58281289504A077AE4B5F90766A /* libaacplus.a */,
+				18E4DF95FA4BAC7531E78DBEC7543D0C /* libcrypto.a */,
+				DF7E367CE29D3DAC0290C95B20773EB4 /* libevent.a */,
+				A572B949A5741A018494BF049533462E /* libssl.a */,
+				EB8D097E3CF5BDAD145E212BD56523D0 /* NIMSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5CDE3673E38AFB7AFA768DA4062B62A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04990AF215EF436DF6BF7DEB10767910 /* libCocoaLumberjack.a */,
+				6256E90C4AF7A58D2B787605BAD9122A /* libPods-NIMQuizGame.a */,
+				0A9EFEF6D0D9BE0654494C16C0A2F13D /* libSVProgressHUD.a */,
+				9680429015E8EB4F7FD67EEE9FBB1586 /* libToast.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		21720075D78E9D4D1D468503BF37F146 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED515324B0E9A6D26F3D7D81E12747CB /* Toast.h in Headers */,
+				231FCFB04539E2772E9A4FC99BEF12A7 /* UIView+Toast.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D2C7BF8B1FCBE08D8661C1A6985D1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1189D8C6CB46D0FAADDF509C7DC3F082 /* CocoaLumberjack.h in Headers */,
+				DF84D530DF2BC33EEA61C6389AB1F746 /* DDAbstractDatabaseLogger.h in Headers */,
+				8FF0F792D87F0F5A6F1578BEA3F04DCE /* DDASLLogCapture.h in Headers */,
+				A4B7EF6C5296F8B175118340855DD9AF /* DDASLLogger.h in Headers */,
+				ABB00A9FAB46BA0C44BF972CF261A764 /* DDAssertMacros.h in Headers */,
+				55359F5DE0FAA9C383FECF4EE275DA6F /* DDContextFilterLogFormatter.h in Headers */,
+				9E4074EE1199C4B07D01D2B7C820BA60 /* DDDispatchQueueLogFormatter.h in Headers */,
+				3441D7B7F5F9A88883353237766D9FAD /* DDFileLogger.h in Headers */,
+				246F324F191688B9EC06AEA374758D2D /* DDLegacyMacros.h in Headers */,
+				8BB083D4FDC1F872F0F0246C9EB3A522 /* DDLog+LOGV.h in Headers */,
+				9505573B785699BF7175E70041928F60 /* DDLog.h in Headers */,
+				F8D81E38BCC185BDCC5D8D6F466C077C /* DDLogMacros.h in Headers */,
+				3BE590C43F6CF35CDF07D6A96A161C0E /* DDMultiFormatter.h in Headers */,
+				2CD4F9B309F4DDA82DD35DB3E3375277 /* DDOSLogger.h in Headers */,
+				A90F92B6D535965E7E26E66001040594 /* DDTTYLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9746F7AC7A257BC7F6675332EBB57313 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E88142BE26EAD887FCE25F81276E88 /* SVIndefiniteAnimatedView.h in Headers */,
+				B8B274A378241D90EB86E91FB66C5FC4 /* SVProgressAnimatedView.h in Headers */,
+				A8E1FFAD5DD8DB05846B50854A4D6406 /* SVProgressHUD.h in Headers */,
+				7B16156A060AD92175B6A39E3AFFF7E6 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E7FED9ADE20946B19DB7DF8F1EADD95 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDADA90B6576883FD268DB579684AB79 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				13048CBCD3AD58470D916B7A5298B081 /* Sources */,
+				04330C98A6C2C84B4BC0CBF91E80FBB2 /* Frameworks */,
+				9746F7AC7A257BC7F6675332EBB57313 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 0A9EFEF6D0D9BE0654494C16C0A2F13D /* libSVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3373615B4870C2690CA91B0E79167339 /* Toast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF5DC9634F9E8A2525A3F95F9D55DBE /* Build configuration list for PBXNativeTarget "Toast" */;
+			buildPhases = (
+				C442A1FFB1B2732CC73E16344BD030C0 /* Sources */,
+				E53C9A52E392A542C611E9D658A8D069 /* Frameworks */,
+				21720075D78E9D4D1D468503BF37F146 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toast;
+			productName = Toast;
+			productReference = 9680429015E8EB4F7FD67EEE9FBB1586 /* libToast.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5DC0F73DCD6ED12D31A6BC946E396F1A /* Pods-NIMQuizGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DAD1894ADCAA95241F2116576181A2F /* Build configuration list for PBXNativeTarget "Pods-NIMQuizGame" */;
+			buildPhases = (
+				777F685B2EA954F5F6C3A5AE6592C878 /* Sources */,
+				A5D0D066DA0ED4CE07FC2E8ED143C736 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EB2902BB246ABC12AF2B90FA156EF9C /* PBXTargetDependency */,
+				6D548DBB589ED2DFCCDEA42F3B3D1853 /* PBXTargetDependency */,
+				5C4256F111BFF25CB98C8152F949C0E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-NIMQuizGame";
+			productName = "Pods-NIMQuizGame";
+			productReference = 6256E90C4AF7A58D2B787605BAD9122A /* libPods-NIMQuizGame.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A9D9DCCE5442795D0AD9E99D86389328 /* CocoaLumberjack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A9B5D67A449F89CF01669103DECD4BC /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */;
+			buildPhases = (
+				76B233ABEC79ECFAA97E290F91377824 /* Sources */,
+				9AF1B599A5BCAE0081FACB0CF30D9712 /* Frameworks */,
+				42D2C7BF8B1FCBE08D8661C1A6985D1A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaLumberjack;
+			productName = CocoaLumberjack;
+			productReference = 04990AF215EF436DF6BF7DEB10767910 /* libCocoaLumberjack.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E5CDE3673E38AFB7AFA768DA4062B62A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9D9DCCE5442795D0AD9E99D86389328 /* CocoaLumberjack */,
+				5DC0F73DCD6ED12D31A6BC946E396F1A /* Pods-NIMQuizGame */,
+				1E7FED9ADE20946B19DB7DF8F1EADD95 /* SVProgressHUD */,
+				3373615B4870C2690CA91B0E79167339 /* Toast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13048CBCD3AD58470D916B7A5298B081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CF9D0D9FBE89490F72FB79A7B05C40 /* SVIndefiniteAnimatedView.m in Sources */,
+				7F97B3E3FC5509E0E079D270FF598143 /* SVProgressAnimatedView.m in Sources */,
+				9101B878396BAB2703C8788895802972 /* SVProgressHUD-dummy.m in Sources */,
+				7F3089B8392F4A3CE4624B9D05C74F04 /* SVProgressHUD.m in Sources */,
+				539EB1571B26CBFE981318A806FE95EA /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B233ABEC79ECFAA97E290F91377824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D760C23A7E9EA32DE198F6E81955AD29 /* CocoaLumberjack-dummy.m in Sources */,
+				B5770CA75B021C2384C71A2CF97EC31A /* DDAbstractDatabaseLogger.m in Sources */,
+				A31A4837EC94EE509FA9E830873A0051 /* DDASLLogCapture.m in Sources */,
+				9B60415F4B0A64AFFEA834E6E544A07B /* DDASLLogger.m in Sources */,
+				68637E3E53F423334D8A9A12D4D4356B /* DDContextFilterLogFormatter.m in Sources */,
+				8F05EDEF9B8DC376146C2FD828000A4E /* DDDispatchQueueLogFormatter.m in Sources */,
+				3F99B776659DABDA78353F4DC5C2E806 /* DDFileLogger.m in Sources */,
+				AF3B19F4F0D4975166F89FE36D12FB30 /* DDLog.m in Sources */,
+				A3F7920CDCDA04CBB02B90DE71024CA8 /* DDMultiFormatter.m in Sources */,
+				20B74AF0CCCA5438F29E79A2ED3A46AC /* DDOSLogger.m in Sources */,
+				95FA511A8FF639BD4EA4718447F04809 /* DDTTYLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777F685B2EA954F5F6C3A5AE6592C878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C093789F544A3FA174C37799C55422F /* Pods-NIMQuizGame-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C442A1FFB1B2732CC73E16344BD030C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31978741D1AE27EE87E665FF4E0F540 /* Toast-dummy.m in Sources */,
+				BB0E888FAEAE3F77A07301F874FB5AAC /* UIView+Toast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C4256F111BFF25CB98C8152F949C0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Toast;
+			target = 3373615B4870C2690CA91B0E79167339 /* Toast */;
+			targetProxy = 4068FFF714A9D3BE2621C5DBF77C6BF6 /* PBXContainerItemProxy */;
+		};
+		6D548DBB589ED2DFCCDEA42F3B3D1853 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1E7FED9ADE20946B19DB7DF8F1EADD95 /* SVProgressHUD */;
+			targetProxy = 90AD36CA58B9FB908DFDD9114DA3FF20 /* PBXContainerItemProxy */;
+		};
+		9EB2902BB246ABC12AF2B90FA156EF9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = A9D9DCCE5442795D0AD9E99D86389328 /* CocoaLumberjack */;
+			targetProxy = 3B54DFDAF9BD79BE6195B93060030F26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		239B968511433C2138D15779F45D354B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168BF813658F21253318F96FDD2720B8 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		23EC539531730CE38101525BB52D80CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEC132816DD0ACB1386661E62F57E95 /* CocoaLumberjack.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		2552AA2FB70925F7A397BEE57FE1C7FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 699C766A993055DE2CEE7D74438E5911 /* Pods-NIMQuizGame.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2F3E817B378E61CC4857F076E97D0387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC67FDEA96F76EAD2FD330615F93E84 /* Toast.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CAF0F752654980A167C87C6C2D6D4DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEC132816DD0ACB1386661E62F57E95 /* CocoaLumberjack.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		74971EFBF6819A9609EB96DBAB4D5B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E3174DE11A33C46A5CCBAF5BE55F249 /* Pods-NIMQuizGame.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D47725CFC822AE20C9A25DFEC6C8EA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC67FDEA96F76EAD2FD330615F93E84 /* Toast.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		DD843932C92256CCAB59B1B8138A28CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168BF813658F21253318F96FDD2720B8 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DAD1894ADCAA95241F2116576181A2F /* Build configuration list for PBXNativeTarget "Pods-NIMQuizGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2552AA2FB70925F7A397BEE57FE1C7FD /* Debug */,
+				74971EFBF6819A9609EB96DBAB4D5B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CF5DC9634F9E8A2525A3F95F9D55DBE /* Build configuration list for PBXNativeTarget "Toast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F3E817B378E61CC4857F076E97D0387 /* Debug */,
+				D47725CFC822AE20C9A25DFEC6C8EA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A9B5D67A449F89CF01669103DECD4BC /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAF0F752654980A167C87C6C2D6D4DE /* Debug */,
+				23EC539531730CE38101525BB52D80CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDADA90B6576883FD268DB579684AB79 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239B968511433C2138D15779F45D354B /* Debug */,
+				DD843932C92256CCAB59B1B8138A28CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
