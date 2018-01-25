@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.netease.mmc.demo.dao.QuizAnswerStatsDao">
+  <resultMap id="quizAnswerStatsDOMap" type="com.netease.mmc.demo.dao.domain.QuizAnswerStatsDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="game_id" jdbcType="BIGINT" property="gameId" />
+    <result column="question_id" jdbcType="BIGINT" property="questionId" />
+    <result column="answer_id" jdbcType="TINYINT" property="answerId" />
+    <result column="select_count" jdbcType="BIGINT" property="selectCount" />
+    <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
+    <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
+  </resultMap>
+  <sql id="quizAnswerStatsDO_Base_Column_List">
+    id, game_id, question_id, answer_id, select_count, created_at, updated_at
+  </sql>
+  <delete id="deleteAnswerStats">
+    DELETE FROM demo_quiz_answer_stats WHERE game_id = #{gameId} AND question_id = #{questionId}
+  </delete>
+  <select id="findByPrimaryKey" parameterType="java.lang.Long" resultMap="quizAnswerStatsDOMap">
+    select 
+    <include refid="quizAnswerStatsDO_Base_Column_List" />
+    from demo_quiz_answer_stats
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="findAnswerCount" resultType="java.lang.Long">
+    SELECT select_count
+    FROM demo_quiz_answer_stats
+    WHERE game_id = #{gameId} AND question_id = #{questionId} and answer_id = #{answerId}
+  </select>
+  <insert id="insertSelective" parameterType="com.netease.mmc.demo.dao.domain.QuizAnswerStatsDO">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into demo_quiz_answer_stats
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="gameId != null">
+        game_id,
+      </if>
+      <if test="questionId != null">
+        question_id,
+      </if>
+      <if test="answerId != null">
+        answer_id,
+      </if>
+      <if test="selectCount != null">
+        select_count,
+      </if>
+      created_at, updated_at, 
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="gameId != null">
+        #{gameId,jdbcType=BIGINT},
+      </if>
+      <if test="questionId != null">
+        #{questionId,jdbcType=BIGINT},
+      </if>
+      <if test="answerId != null">
+        #{answerId,jdbcType=TINYINT},
+      </if>
+      <if test="selectCount != null">
+        #{selectCount,jdbcType=BIGINT},
+      </if>
+      <choose>
+        <when test="createdAt != null">
+          #{createdAt},
+        </when>
+        <otherwise>
+          now(),
+        </otherwise>
+      </choose>
+      <choose>
+        <when test="updatedAt != null">
+          #{updatedAt},
+        </when>
+        <otherwise>
+          now(),
+        </otherwise>
+      </choose>
+    </trim>
+  </insert>
+  <insert id="insertOrPlusAnswerCount">
+    INSERT INTO demo_quiz_answer_stats (game_id, question_id, answer_id, select_count, created_at, updated_at)
+    VALUES (#{gameId}, #{questionId}, #{answerId}, #{count}, now(), now())
+    ON DUPLICATE KEY UPDATE select_count = select_count + #{count}
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.netease.mmc.demo.dao.domain.QuizAnswerStatsDO">
+    update demo_quiz_answer_stats
+    <set>
+      <if test="gameId != null">
+        game_id = #{gameId,jdbcType=BIGINT},
+      </if>
+      <if test="questionId != null">
+        question_id = #{questionId,jdbcType=BIGINT},
+      </if>
+      <if test="answerId != null">
+        answer_id = #{answerId,jdbcType=TINYINT},
+      </if>
+      <if test="selectCount != null">
+        select_count = #{selectCount,jdbcType=BIGINT},
+      </if>
+      <choose>
+        <when test="updatedAt != null">
+          updated_at = #{updatedAt},
+        </when>
+        <otherwise>
+          updated_at = now(),
+        </otherwise>
+      </choose>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

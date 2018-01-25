@@ -1,0 +1,26 @@
+PODS:
+  - CocoaLumberjack (3.4.0):
+    - CocoaLumberjack/Default (= 3.4.0)
+    - CocoaLumberjack/Extensions (= 3.4.0)
+  - CocoaLumberjack/Default (3.4.0)
+  - CocoaLumberjack/Extensions (3.4.0):
+    - CocoaLumberjack/Default
+  - NIMSDK_LITE (4.7.2)
+  - SVProgressHUD (2.2.2)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 3.4.0)
+  - NIMSDK_LITE (~> 4.7.2)
+  - SVProgressHUD (~> 2.2.2)
+  - Toast (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: e033a5d8513357af2dd456eb66e202c325c30627
+  NIMSDK_LITE: 2145d7e314f70d6fa49f34bf4a31e85e4f7c808d
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 5fb8dcd6aabdcd486f46595b6c068fb1fece4a42
+
+COCOAPODS: 1.3.1
