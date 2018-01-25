@@ -51,7 +51,7 @@ Android 直播竞答 Demo 工程基于以下开发
 4. 热更新 hotfix， 版本为 1.1.3
 5. View 注入 Butter Knife，版本为 8.8.1
 6. 图片加载库 Glide，版本为 4.2.0
-7.  JDK 使用 1.8.0
+7. JDK 使用 1.8.0
 
 ### 工程结构
 
@@ -65,7 +65,7 @@ com.netease.nim.quizgame
 
 |———— protocol		# 与服务器交互的协议
 
-|____ ui				# 界面层实现
+|———— ui				# 界面层实现
 
 #### 总体结构
 
