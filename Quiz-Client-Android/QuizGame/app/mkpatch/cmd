@@ -1,0 +1,9 @@
+java -jar tinker-patch-cli-1.9.2.jar -old old.apk -new new.apk -config tinker_config.xml -out output_path
+python md5.py ./output_path/patch_signed_7zip.apk
+
+adb push /Users/huangjun/Netease/NIMHotfixClient/app/mkpatch/output_path/patch_signed_7zip.apk /storage/emulated/0/Android/data/com.netease.nim.hotfix.app/cache/patch/patch.apk
+adb push /Users/huangjun/Netease/NIMHotfixClient/app/example/patch.apk /storage/emulated/0/Android/data/com.netease.nim.hotfix.app/cache/patch/patch.apk
+adb pull /storage/emulated/0/Android/data/com.netease.nim.hotfix.app/cache/patch/log/nim_hotfix_sdk.log /Users/huangjun/Netease/NIMHotfixClient/app/mkpatch/nim_hotfix_sdk.log
+
+./gradlew bintrayUpload
+https://bintray.com/neteaseim/maven/nim-android-hotfix
