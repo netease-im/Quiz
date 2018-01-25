@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="885,680" caption="0,0,0,34" shadowattached="false">
+    <Class name="btn_step" value="font=&quot;7&quot; normaltextcolor=&quot;white&quot; normalimage=&quot;file='step.png' corner='25,5,25,5'&quot; hotimage=&quot;file='step1.png' corner='25,5,25,5'&quot; pushedimage=&quot;file='step2.png' corner='25,5,25,5'&quot; disabledimage=&quot;file='step3.png' corner='25,5,25,5' fade='80'&quot;" />
+    <VBox width="885" height="auto" bkcolor="bk_wnd_black" bordersize="1,1,1,1" bordercolor="splitline_level1" padding="1,1,1,1" >
+        <HBox class="caption" bkimage="" >
+            <Label class="font_title" name="title" width="stretch" valign="center" normaltextcolor="lightcolor"/>
+            <Button class="btn_wnd_min" name="minbtn" margin="10,6,0,0" />
+            <Button class="btn_wnd_close" name="closebtn" margin="10,6,0,0"/>
+        </HBox>
+        <HBox bkcolor="white" height="auto">
+			<BitmapControl name="screen" bkcolor="bk_video_content" width="360" height="640" >
+				<HBox name="device_box" margin="10,0,0,10" height="auto" valign="bottom" childmargin="10" >
+					<ButtonBox name="mic" width="28" height="18" mousechild="false" >
+						<Control bkimage="mic.png" width="auto" height="auto" />
+						<Control bkimage="down.png" valign="bottom" halign="right" width="auto" height="auto" />
+						<Control name="mic_warning" visible="false" bkimage="warning.png" halign="center" width="auto" height="auto" />
+					</ButtonBox>
+					<ButtonBox name="camera" width="28" height="18" mousechild="false" >
+						<Control bkimage="camera.png" width="auto" height="auto" />
+						<Control bkimage="down.png" valign="bottom" halign="right" width="auto" height="auto" />
+						<Control name="camera_warning" visible="false" bkimage="warning.png" halign="center" width="auto" height="auto" />
+					</ButtonBox>
+				</HBox>
+			</BitmapControl>
+			<VBox>
+				<HBox height="50" width="424" margin="0,25,0,20" halign="center" bkimage="bk2.png" >
+					<Control width="32" height="32" bkimage="face.png" margin="10,0,0,0" valign="center" />
+					<Label name="room_id" valign="center" margin="15,0,0,0" normaltextcolor="darkcolor"/>
+				</HBox>
+				<VBox name="qustion_box" visible="false" halign="center" padding="30,28,30,40" width="328" height="353" childmargin="15" bkimage="file='bk1.png' corner='30,30,30,30'" >
+					<Label name="qustion_text" width="268" margin="10,0,10,10" font="3" normaltextcolor="dark2color" singleline="false" linelimit="true" text="" />
+					<HBox name="sel_1" halign="center" height="44" width="250" bkimage="sel0.png" padding="20,0,20,0" >
+						<Label name="sel_text_1" valign="center" font="2" normaltextcolor="dark2color" text="" />
+						<Control />
+						<Label name="sel_num_1" valign="center" font="2" normaltextcolor="lightcolor" text="" />
+					</HBox>
+					<HBox name="sel_2" halign="center" height="44" width="250" bkimage="sel0.png" padding="20,0,20,0" >
+						<Label name="sel_text_2" valign="center" font="2" normaltextcolor="dark2color" text="" />
+						<Control />
+						<Label name="sel_num_2" valign="center" font="2" normaltextcolor="lightcolor" text="" />
+					</HBox>
+					<HBox name="sel_3" halign="center" height="44" width="250" bkimage="sel0.png" padding="20,0,20,0" >
+						<Label name="sel_text_3" valign="center" font="2" normaltextcolor="dark2color" text="" />
+						<Control />
+						<Label name="sel_num_3" valign="center" font="2" normaltextcolor="lightcolor" text="" />
+					</HBox>
+					<Control />
+					<Label name="answer_num" font="3" normaltextcolor="dark2color" text="" />
+				</VBox>
+				<VBox name="result_box" visible="false" halign="center" padding="25,40,25,20" width="328" height="353" childmargin="15" bordersize="1,1,1,1" bordercolor="splitline_level1" >
+					<Box width="auto" height="40" margin="0,0,0,0" halign="center" borderround="20,20,20,20" padding="30,0,30,0" bkcolor="darkcolor" >
+						<Label name="ret_num" font="2" halign="center" valign="center" normaltextcolor="white" text=""/>
+					</Box>
+					<VListBox name="ret_member" height="auto" margin="0,10,0,0" childmargin="5" vscrollbar="false" hscrollbar="false" vscrollunit="150"/>
+					<Label name="member_more" font="2" halign="center" normaltextcolor="darkcolor" text="..." />
+					<Control name="empty_tip" halign="center" height="119" width="161" bkimage="empty.png" />
+				</VBox>
+				<Control />
+				<Label name="tip" visible="false" font="2" width="stretch" align="center" normaltextcolor="lightcolor" text="" />
+				<HBox name="tip_box" visible="false" margin="0,10,0,0" height="auto" width="auto" halign="center" >
+					<Label name="tipex1" font="2" align="center" normaltextcolor="lightcolor" text="" />
+					<Label name="tipex_time" font="2" align="center" normaltextcolor="link_red" margin="4,0,4,0" text="" />
+					<Label name="tipex2" font="2" align="center" normaltextcolor="lightcolor" text="" />
+				</HBox>
+				<Button  class="btn_step" width="328" height="42" margin="0,20,0,25" halign="center" name="btn_step" normaltextcolor="white" disabledtextcolor="dark2color" text=""/>
+				<Button  visible="false" bkimage="btn_end.png" width="328" height="42" margin="0,20,0,25" halign="center" name="btn_end" normaltextcolor="white" disabledtextcolor="white" text="结束直播"/>
+			</VBox>
+        </HBox>
+    </VBox>
+</Window>

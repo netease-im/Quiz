@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<MenuElement class="MenuElement" name="" width="300" >
+		<Label class="menu_text" name="item_name" text="" margin="0,0,0,0"/>
+	</MenuElement>
+</Window>

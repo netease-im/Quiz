@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.netease.nimlib:player-1.1.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/player-1.1.2.aar/30b31cd4045352d2dbd4cf7a93fa8a89/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/player-1.1.2.aar/30b31cd4045352d2dbd4cf7a93fa8a89/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netease.nimlib/player/1.1.2/97ae9615f01bb3657aa1bcfe56a1cad95216c1df/player-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
