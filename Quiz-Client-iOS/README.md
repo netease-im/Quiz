@@ -90,21 +90,22 @@
     ```
     * 参数列表
     
-    |名称|	类型|	说明|	必须|
-|----------------------|--------------------|--------|-----|
-    |sid	|String|	如果当前已有正在使用的 accid	|否|
+      |名称|  类型| 说明| 必须|
+      |----------------------|--------------------|--------|-----|
+      |sid  |String|    如果当前已有正在使用的 accid   |否|
+
     在参数对应的 sid 未失效时，会返回 sid 对应的账号信息，并更新账号失效时间，其他情况（sid 已失效或者 sid 不存在）会重新返回一个可用账号。
     
     * 返回说明
     
     
- | 参数              | 类型             | 说明|                 
- |----------------------|--------------------|--------|
-	| code  | int  | 状态码 |
-	| msg | String  | 错误信息|		| data | String  | 返回信息 | 
-	| accid | String  | 用户账号 | 
-   | nickname | String  | 用户昵称 | 
-   | imToken | String  | im token | 
+      | 参数              | 类型             | 说明|                 
+      |----------------------|--------------------|--------|
+      | code  | int  | 状态码 |
+      | msg | String  | 错误信息|       | data | String  | 返回信息 | 
+      | accid | String  | 用户账号 | 
+      | nickname | String  | 用户昵称 | 
+      | imToken | String  | im token | 
    
    
    说明：为了简化解决方案的次要业务逻辑，这里将登录注册合二为一，每次调用该接口，应用服务器会返回一个可用的账号进行登录。
@@ -113,16 +114,16 @@
     * 请求说明
     
     ```
-    POST http://${Host}/quiz/player/room/query HTTP/1.1
-Content-Type: application/x-www-form-urlencoded;charset=utf-8
+    POST http://${Host}/quiz/player/room/query HTTP/1.1</br>Content-Type: application/x-www-form-urlencoded;charset=utf-8
     ```
+    
     * 参数列表
     
-    |名称|	类型|	说明|	必须|
-|-------------------|---------------|--------|-----|
-|sid	|String|	当前 accid	|是|
-|roomId	|Long|	请求进入的房间 id		|是|
-|addrType	|String|	聊天室 Link 类型 WEB/COMMON，默认为COMMON	|否|
+      |名称|  类型| 说明| 必须|
+      |-------------------|---------------|--------|-----|
+      |sid  |String|    当前 accid    |是|
+      |roomId   |Long|  请求进入的房间 id      |是|
+      |addrType |String|    聊天室 Link 类型 WEB/COMMON，默认为COMMON    |否|
 
 
     通过该接口获取需要进入的房间信息
@@ -131,52 +132,49 @@ Content-Type: application/x-www-form-urlencoded;charset=utf-8
     * 返回说明
 
 
-    | 参数              | 类型             | 说明|            
-	|-------------------|--------------------|--------|
-	| code  | int  | 状态码 |
-	| msg | String  | 错误信息|	
-	| data | String  | 返回信息 |
-	| roomId | String | 房间号 |
-	| name | String |  房间名称 |
-	| creator | String | 房间创建者 |
-	| rtmpPullUrl | String | 拉流地址 |
-	| roomStatus | BOOL | 房间状态 |
-	| liveStatus | int | 房间状态 |
-	| onlineUserCount | int | 在线人数 |
-	| bonus | int | 奖金金额 |
-	| quizCount | int | 题目数量 |
+      | 参数              | 类型             | 说明|            
+      |-------------------|--------------------|--------|
+      | code  | int  | 状态码 |
+      | msg | String  | 错误信息|   
+      | data | String  | 返回信息 |
+      | roomId | String | 房间号 |
+      | name | String |  房间名称 |
+      | creator | String | 房间创建者 |
+      | rtmpPullUrl | String | 拉流地址 |
+      | roomStatus | BOOL | 房间状态 |
+      | liveStatus | int | 房间状态 |
+      | onlineUserCount | int | 在线人数 |
+      | bonus | int | 奖金金额 |
+      | quizCount | int | 题目数量 |
 
-	
+    
 * 提交答案请求 NTESSubmitQuizSelectTask
 
     * 请求说明
     
     ```
-    POST http://${Host}/quiz/player/answer HTTP/1.1
-    Content-Type: application/x-www-form-urlencoded;charset=utf-8
+    POST http://${Host}/quiz/player/answer HTTP/1.1</br>Content-Type:</br>application/x-www-form-urlencoded;charset=utf-8
     ```
     * 参数列表
    
     
-    |名称|	类型|	说明|	必须|
-|------------------|------------------|--------|-----|
-|sid	|String|	当前 accid	|是|
-|roomId	|Long|	请求进入的房间 id		|是|
-|questionId	|Long|	题目 id |是|
-| answer | Long | 回答选项 id |是|
+      |名称|  类型| 说明| 必须|
+      |------------------|------------------|--------|-----|
+      |sid  |String|    当前 accid    |是|
+      |roomId   |Long|  请求进入的房间 id      |是|
+      |questionId   |Long|  题目 id |是|
+      | answer | Long | 回答选项 id |是|
   
-    
     * 返回说明
-    
     根据提交返回是否正确，判定提交答案是否正确
     
-    
-    | 参数              | 类型             | 说明|      
-    |-----------------|------------------|--------|
-    | code  | int  | 状态码 |
-	| msg | String  | 错误信息|	
-	| data | String  | 返回信息 |
-	| result | int | 正确与否判定结果 |
+      | 参数              | 类型             | 说明|      
+      |-----------------|------------------|--------|
+      | code  | int  | 状态码 |
+      | msg | String  | 错误信息|   
+      | data | String  | 返回信息 |
+      | result | int | 正确与否判定结果 |
+      
 
 
 #### 4. 业务层 Manager
@@ -252,5 +250,6 @@ Content-Type: application/x-www-form-urlencoded;charset=utf-8
     return self;
 }
 ```
+
 
 
